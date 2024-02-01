@@ -16,4 +16,4 @@ execArg="-PrunMain -Dexec.mainClass=$mainClass"
 echo "Exec args: $mainClass"
 
 # Execute mvn command
-mvn clean test-compile exec:java -PrunMain $execArg
+mvn clean test-compile package exec:java -PrunMain $execArg

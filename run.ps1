@@ -16,4 +16,4 @@ Write-Host "Main Class: $mainClass"
 $execArg = "-Dexec.mainClass=" + $mainClass
 Write-Host "Exec args: $execArg"
 
-mvn clean test-compile exec:java -PrunMain $execArg
+mvn clean test-compile package exec:java -PrunMain $execArg

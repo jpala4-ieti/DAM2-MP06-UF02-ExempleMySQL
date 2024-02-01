@@ -18,11 +18,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class Manager {
-
     private static SessionFactory factory; 
-    
-    public static void createSessionFactory() {
 
+    public static void createSessionFactory() {
         try {
             Configuration configuration = new Configuration();
             configuration.configure();
@@ -52,9 +50,8 @@ public class Manager {
             StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(
                 configuration.getProperties()).build();
             factory = configuration.buildSessionFactory(serviceRegistry);
-            
         } catch (Throwable ex) {
-            System.err.println("Failed to create sessionFactory object." + ex);
+            System.err.println("Error en crear un objecte de tipussessionFactory." + ex);
             throw new ExceptionInInitializerError(ex);
         }
     }

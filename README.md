@@ -16,7 +16,7 @@ docker rm hibernate-mysql-exemple
 En cas de no eliminar-se ho podem forçar amb
 ```bash
 docker rm -f hibernate-mysql-exemple
-```bash
+```
 
 
 ### Compilació i funcionament ###
@@ -37,3 +37,15 @@ Per executar el projecte a Linux/macOS cal
 ```bash
 ./run.sh com.project.exemplemysql.Main
 ```
+
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>4.3.11.Final</version>
+</dependency>
+
+<dependency>
+    <groupId>org.hibernate.orm</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.4.2.Final</version>
+</dependency>
